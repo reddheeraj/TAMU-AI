@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tamu-chat"
+version = "0.1.0"
+description = "A Python library for interacting with the TAMU Chat AI API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Dheeraj Mudireddy", email = "meetdheerajreddy@gmail.com"}
+]
+keywords = ["tamu", "chat", "api", "llm", "openai", "chatgpt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "requests>=2.25.0",
+    "python-dotenv>=0.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=0.991",
+]
+
+[project.urls]
+Homepage = "https://github.com/reddheeraj/TAMU-AI"
+Documentation = "https://github.com/reddheeraj/TAMU-AI"
+Repository = "https://github.com/reddheeraj/TAMU-AI"
+"Bug Reports" = "https://github.com/reddheeraj/TAMU-AI/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["tamu_chat"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311', 'py312']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
