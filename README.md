@@ -1,6 +1,6 @@
 # TAMU Chat API Python Library
 
-A simple, clean Python library for interacting with the TAMU Chat API. This library provides an easy-to-use interface for generating chat completions using various LLM models.
+Access Texas A&M University's AI services with just 2 lines of code, and use any of the provided LLMs for free! (Exclusive for Aggies)
 
 > This library is still in development and the API may be subject to change.
 > You need to get your API key from [chat.tamu.ai](https://chat.tamu.ai)
