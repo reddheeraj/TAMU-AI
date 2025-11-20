@@ -264,12 +264,24 @@ MIT License
 
 For issues and questions, please open an issue on GitHub.
 
+> If you see this error during installation via pip, please ignore or report it via issues.
+```bash
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+conda-repo-cli 1.0.75 requires requests_mock, which is not installed.
+anaconda-cloud-auth 0.1.4 requires pydantic<2.0, but you have pydantic 2.11.1 which is incompatible.
+conda-repo-cli 1.0.75 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.75 requires requests==2.31.0, but you have requests 2.32.5 which is incompatible.
+streamlit 1.30.0 requires cachetools<6,>=4.0, but you have cachetools 6.2.1 which is incompatible.
+streamlit 1.30.0 requires packaging<24,>=16.8, but you have packaging 24.2 which is incompatible.
+streamlit 1.30.0 requires protobuf<5,>=3.20, but you have protobuf 6.33.0 which is incompatible.
+```
+
 ## Creator
 - Dheeraj Mudireddy (meetdheerajreddy@gmail.com)
 
 ## Changelog
 
-### 0.1.0 (2025-11-20)
+### 0.1.0 (11/20/2025)
 - Initial release
 - Basic chat completion support
 - Model listing support
