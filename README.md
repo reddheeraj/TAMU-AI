@@ -2,9 +2,12 @@
 
 A simple, clean Python library for interacting with the TAMU Chat API. This library provides an easy-to-use interface for generating chat completions using various LLM models.
 
+> This library is still in development and the API may be subject to change.
+> You need to get your API key from [chat.tamu.ai](https://chat.tamu.ai)
+
 ## Features
 
-- 🚀 Simple and intuitive API
+- 🚀 Simple and intuitive usage
 - 🔒 Secure API key management via environment variables
 - 📦 Type hints throughout for better IDE support
 - 🎯 Support for multiple models (o3, GPT-4, Claude, Gemini, etc.)
@@ -33,18 +36,17 @@ pip install -e .
 ```python
 from tamu_chat import TAMUChatClient
 
-# Initialize client with API key
+# Initialize client with API key (or add it to the .env file)
 client = TAMUChatClient(api_key="sk-your-api-key-here")
 
-# Simple string input
 result = client.chat_completion("What is the capital of India?")
 print(result.text)
 # Output: "The capital of India is New Delhi."
 
 # Access full response
-print(result.model)  # Model used
-print(result.id)     # Response ID
-print(result.full_response)  # Complete API response
+print(result.model)
+print(result.id)
+print(result.full_response)
 ```
 
 ### Using Environment Variables
@@ -83,6 +85,12 @@ client = TAMUChatClient()
 ### Advanced Usage
 
 ```python
+# Get a list of available models
+models = client.list_models()
+for model in models:
+    print(model['id'])
+
+# Make sure to use this model id in 'model' parameter of chat_completion()
 # Different model
 result = client.chat_completion(
     "Explain quantum computing",
@@ -103,11 +111,6 @@ messages = [
 ]
 result = client.chat_completion(messages)
 print(result.text)  # "Your name is Alice."
-
-# List available models
-models = client.list_models()
-for model in models:
-    print(model['id'])
 ```
 
 ## API Reference
