@@ -9,11 +9,11 @@ long_description = readme_file.read_text(encoding="utf-8") if readme_file.exists
 setup(
     name="tamu-chat",
     version="0.1.0",
-    author="TAMU Chat Library Contributors",
-    description="A Python library for interacting with the TAMU Chat API",
+    author="Dheeraj Mudireddy",
+    description="A Python library for interacting with the TAMU Chat AI API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/tamu-chat",
+    url="https://github.com/reddheeraj/TAMU-AI",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -21,19 +21,15 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.11",
     install_requires=[
-        "requests>=2.25.0",
-        "python-dotenv>=0.19.0",
+        "requests>=2.32.5",
+        "python-dotenv>=1.2.1",
     ],
     extras_require={
         "dev": [
@@ -46,9 +42,9 @@ setup(
     },
     keywords="tamu chat api llm openai chatgpt",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/tamu-chat/issues",
-        "Source": "https://github.com/yourusername/tamu-chat",
-        "Documentation": "https://github.com/yourusername/tamu-chat#readme",
+        "Bug Reports": "https://github.com/reddheeraj/TAMU-AI/issues",
+        "Source": "https://github.com/reddheeraj/TAMU-AI",
+        "Documentation": "https://github.com/reddheeraj/TAMU-AI#readme",
     },
 )
 
