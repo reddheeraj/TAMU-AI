@@ -5,6 +5,8 @@ Access Texas A&M University's AI services with just 2 lines of code, and use any
 > This library is still in development and the API may be subject to change.
 > You need to get your API key from [chat.tamu.ai](https://chat.tamu.ai)
 
+[PYPI](https://pypi.org/project/tamu-chat/0.1.0/)
+
 ## Features
 
 - 🚀 Simple and intuitive usage
