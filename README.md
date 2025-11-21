@@ -1,11 +1,19 @@
+<div align="center">
+
 # TAMU Chat API Python Library
 
 Access Texas A&M University's AI services with just 2 lines of code, and use any of the provided LLMs for free! (Exclusive for Aggies)
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/tamu-chat?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/tamu-chat)
+[![PyPI Version](https://img.shields.io/pypi/v/tamu-chat?color=blue&label=PyPI)](https://pypi.org/project/tamu-chat/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/reddheeraj/TAMU-AI/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/pypi/pyversions/tamu-chat)](https://pypi.org/project/tamu-chat/)
+
+</div>
+
 > This library is still in development and the API may be subject to change.
 > You need to get your API key from [chat.tamu.ai](https://chat.tamu.ai)
-
-[PYPI](https://pypi.org/project/tamu-chat/0.1.0/)
 
 ## Features
 
