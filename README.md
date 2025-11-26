@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="assets/TAU Group Logo.png" alt="TAU Group Logo" width="150" style="margin-bottom: 20px;">
+
+<p><em>By <a href="https://github.com/taugroup">TAU Group</a></em></p>
+
 # TAMU Chat API Python Library
 
 Access Texas A&M University's AI services with just 2 lines of code, and use any of the provided LLMs for free! (Exclusive for Aggies)
